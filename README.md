@@ -16,19 +16,15 @@ Follow these steps to set up the project on your machine:
 
 ## 1. Clone the Repository:
 
-        ```sh
         git clone https://github.com/Mobinakadaei/your-repo.git
         cd your-repo
 
 ## 2. Install Dependencies:
 
-	```sh
-	```bash
 	pip install robotframework
 	pip install robotframework-browser
-	```
 
-3. Running the Tests:
+## 3. Running the Tests:
 
 	For UI TestCases:
 	```sh
