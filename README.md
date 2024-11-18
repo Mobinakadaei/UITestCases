@@ -23,14 +23,9 @@ Follow these steps to set up the project on your machine:
     pip install robotframework
     pip install robotframework-browser
 
-## 3. Running the Tests:
+## 3. Running the Tests (For UI Testing): 
+   robot UITestCases.robot
 
-	For UI TestCases:
-
-
-	```sh
-	robot UITestCases.robot
-	```
 
 The UI test cases are located in the TestCases/UITestCases.robot folder and will be executed after the installation steps mentioned earlier. The keywords for each web page are organized into separate folders within the pageObjectModel directory. This structure ensures that the main keywords and variables, which are used across the test cases, are defined and detailed within the corresponding files in that directory. This modular approach enhances the maintainability and reusability of the test scripts.
 
