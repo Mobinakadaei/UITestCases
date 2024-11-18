@@ -72,11 +72,11 @@ By organizing the code in this manner, all web elements, interactions, and varia
   * Readability: Test scripts are more readable and maintainable since the logic and data are separated.
 
 
-## 3. Testing with Robot Framework, Python and Playwright
+## 3. Testing with Robot Framework, Playwright and Python:
   For this project, I chose Python and Robot Framework due to their strengths in test automation and suitability for the project's needs. Here are the reasons behind this decision:
    
    **Why Did I Used Robot Framework:**
----
+
    * Keyword-Driven Testing: 
    Robot Framework supports a keyword-driven approach, which is highly readable and allows even non-technical stakeholders to understand test cases. This makes collaboration and test maintenance easier
 
@@ -86,16 +86,11 @@ By organizing the code in this manner, all web elements, interactions, and varia
    * Modularity: 
    Robot Framework supports the creation of reusable test libraries and keywords, which improves test organization and minimizes code duplication. Its flexibility allows seamless integration with other tools and frameworks, such as Playwright for browser automation, enhancing the overall versatility of the testing process.
 
-   **Why Did I Used Python:**
----
-   * Extensibility: 
-   Python provides a wide range of testing libraries, including powerful tools for data handling, reporting, and integration with CI/CD pipelines, making it scalable for both small and large projects.
-
 
    For the UI testing I used Browser Library in Robot Framework. The Browser library in Robot Framework integrates Playwright, a browser automation tool, to provide a high-level, keyword-driven interface for automating web browsers.
    
    **Why Did I Used Playwright for UI testing:**
----
+
    * Fast and Reliable Automation: 
    Playwright is designed for high-speed and stable browser automation. It handles asynchronous events, network conditions, and dynamic content well, providing reliability even with complex web applications.
 
@@ -107,5 +102,10 @@ By organizing the code in this manner, all web elements, interactions, and varia
 
    * Flexible Locator Strategies: 
    Playwright supports multiple ways to locate elements on a page (e.g., CSS selectors, XPath, text, etc.).
+
+   **Why Did I Used Python:**
+
+   * Extensibility: 
+   Python provides a wide range of testing libraries, including powerful tools for data handling, reporting, and integration with CI/CD pipelines, making it scalable for both small and large projects.
 
 
