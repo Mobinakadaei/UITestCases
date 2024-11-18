@@ -1,4 +1,4 @@
-## Test Automation with Robot Framework & Playwright
+## UI Test Automation with Robot Framework & Playwright
 
 Before running the tests, ensure that you have the following installed:
 
@@ -10,30 +10,34 @@ Before running the tests, ensure that you have the following installed:
 You can install the required libraries by running the following commands:
 
 
-**Installation Guide
+**Installation Guide**
+
 Follow these steps to set up the project on your machine:
 	1.Clone the Repository:
+
 	```sh
 	git clone https://github.com/your-username/your-repo.git
 	cd your-repo
 	```
+
 	2. Install Dependencies:
+
 	```sh
 	```bash
 	pip install robotframework
 	pip install robotframework-browser
 	```
+
 	3.Running the Tests:
+
 	For UI TestCases:
 	```sh
 	robot UITestCases.robot
 	```
-	For BackEnd TestCases
-	robot BackEndTestCases.robot
 
 The UI test cases are located in the TestCases/UITestCases.robot folder and will be executed after the installation steps mentioned earlier. The keywords for each web page are organized into separate folders within the pageObjectModel directory. This structure ensures that the main keywords and variables, which are used across the test cases, are defined and detailed within the corresponding files in that directory. This modular approach enhances the maintainability and reusability of the test scripts.
 
-##Test Approach
+## Test Approach
 
 In this project, I used the Page Object Model (POM) to structure and organize the UI tests. The POM is a design pattern that helps maintainable, reusable, and scalable test code by separating test cases from the UI actions and elements. Here's an overview of how I implemented this approach:
 
