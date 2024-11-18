@@ -13,12 +13,12 @@ You can install the required libraries by running the following commands:
 **Installation Guide**
 
 Follow these steps to set up the project on your machine:
-	1.Clone the Repository:
 
-	```sh
-	git clone https://github.com/your-username/your-repo.git
-	cd your-repo
-	```
+	## 1. Clone the Repository:
+
+        ```sh
+        git clone https://github.com/Mobinakadaei/your-repo.git
+        cd your-repo
 
 	2. Install Dependencies:
 
