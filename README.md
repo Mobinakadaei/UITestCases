@@ -118,7 +118,7 @@ By organizing the code in this manner, all web elements, interactions, and varia
 
 I have added two additional test cases to this project, and I have outlined the steps below for a clearer understanding.
 
-TestCase1: Select Romance Category and Filter the Results
+**TestCase1: Select Romance Category and Filter the Results**
 | Steps        | Expected Result |
 |-------------|-----------------|
 |Open Browser and Scroll Home page to reach to Romance category and tap on that.| Romance category detail page will open.|
@@ -126,7 +126,7 @@ TestCase1: Select Romance Category and Filter the Results
 |Sort the page result by title.| Books must be sorted by their title in order.|
 
 
-TestCase2: Search a Book by title and select ebooks
+**TestCase2: Search a Book by title and select ebooks**
 | Steps        | Expected Result |
 |-------------|-----------------|
 |Open Browser and set the search method to title.| Title method must be choosed.|
