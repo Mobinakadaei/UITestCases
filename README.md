@@ -1,3 +1,5 @@
+![alt text](UITestCasesResult.png)
+
 ## UI Test Automation with Robot Framework & Playwright
 
 Before running the tests, ensure that you have the following installed:
@@ -16,8 +18,8 @@ Follow these steps to set up the project on your machine:
 
 ## 1. Clone the Repository:
 
-    git clone https://github.com/Mobinakadaei/your-repo.git
-    cd your-repo
+    git clone https://github.com/Mobinakadaei/UITestCases.git
+    cd UITestCases
 
 ## 2. Install Dependencies:
     pip install robotframework

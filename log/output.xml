@@ -1,0 +1,423 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.9 on darwin)" generated="2024-11-18T13:59:52.206456" rpa="false" schemaversion="5">
+<suite id="s1" name="UITestCases" source="/Users/alimostafaei/Desktop/Mobina's file/ThreatFabric/TestCases/UITestCases.robot">
+<test id="s1-t1" name="Advance Search for Harry Potter Book and Rowling Author" line="11">
+<kw name="Open Browser" owner="HomePage">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-11-18T13:59:52.296053" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/alimostafaei/Desktop/Mobina's file/ThreatFabric/log/browser/traces/9b2a3013-ca45-4e86-9ce3-b9abc1804e1b"}</msg>
+<msg time="2024-11-18T13:59:52.315901" level="INFO">Starting Browser process /Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js using port 53496</msg>
+<msg time="2024-11-18T13:59:52.316237" level="INFO">Node startup parameters: ['node', '/Library/Frameworks/Python.framework/Versions/3.11/lib/python3.11/site-packages/Browser/wrapper/index.js', '53496']</msg>
+<msg time="2024-11-18T13:59:53.958647" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/alimostafaei/Desktop/Mobina's file/ThreatFabric/log/browser/traces/9b2a3013-ca45-4e86-9ce3-b9abc1804e1b"}</msg>
+<arg>headless=${headless_status}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-11-18T13:59:52.295223" elapsed="1.663745"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-18T13:59:55.771394" level="INFO">Successfully initialized new page object and opened url: https://openlibrary.org/</msg>
+<msg time="2024-11-18T13:59:55.771560" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-18T13:59:53.959294" elapsed="1.812389"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2024-11-18T13:59:55.782654" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1512</arg>
+<arg>823</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2024-11-18T13:59:55.771855" elapsed="0.010965"/>
+</kw>
+<status status="PASS" start="2024-11-18T13:59:52.294852" elapsed="3.488084"/>
+</kw>
+<kw name="Tap on Submit Search button" owner="HomePage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T13:59:55.783781" level="INFO">Clicks the element '[class="search-bar-submit"]'.</msg>
+<arg>${search_button_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T13:59:55.783473" elapsed="0.410745"/>
+</kw>
+<status status="PASS" start="2024-11-18T13:59:55.783135" elapsed="0.411244"/>
+</kw>
+<kw name="Tap on Advanced Search Button" owner="AdvancedSearchPage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T13:59:56.195220" level="INFO">Clicks the element 'a[data-ol-link-track="SearchNav|SearchAdvanced"]'.</msg>
+<arg>${advanced_search_button_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T13:59:56.194850" elapsed="0.411778"/>
+</kw>
+<status status="PASS" start="2024-11-18T13:59:56.194569" elapsed="0.412206"/>
+</kw>
+<kw name="Enter Book title and Author's name in advanced search page" owner="AdvancedSearchPage">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-18T13:59:56.607467" level="INFO">Fills the text 'Harry Potter' in the given field.</msg>
+<arg>${advanced_search_page_title_locator}</arg>
+<arg>${advance_search_page_book_title}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T13:59:56.607168" elapsed="0.023284"/>
+</kw>
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-18T13:59:56.630964" level="INFO">Fills the text 'Rowling' in the given field.</msg>
+<arg>${advanced_search_page_author_locator}</arg>
+<arg>${advance_search_page_author_name}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T13:59:56.630639" elapsed="0.007593"/>
+</kw>
+<status status="PASS" start="2024-11-18T13:59:56.606946" elapsed="0.031408"/>
+</kw>
+<kw name="Tap on Search Button in Advanced Search Page" owner="AdvancedSearchPage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T13:59:56.639161" level="INFO">Clicks the element 'button[type="submit"]'.</msg>
+<arg>${advanced_search_page_search_button_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T13:59:56.638899" elapsed="1.660520"/>
+</kw>
+<status status="PASS" start="2024-11-18T13:59:56.638501" elapsed="1.661181"/>
+</kw>
+<kw name="Tap on Author's name in search result page" owner="AdvancedSearchPage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T13:59:58.300657" level="INFO">Clicks the element 'a[href="/authors/OL23919A/J._K._Rowling"] &gt;&gt; nth=0'.</msg>
+<arg>${author_link_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T13:59:58.300209" elapsed="0.947198"/>
+</kw>
+<status status="PASS" start="2024-11-18T13:59:58.299918" elapsed="0.947650"/>
+</kw>
+<kw name="Sort Author's Works by Rating" owner="AuthorDetailPage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T13:59:59.248487" level="INFO">Clicks the element 'span[class='sort-dropper']'.</msg>
+<arg>${drop_down_menu_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T13:59:59.248113" elapsed="0.028718"/>
+</kw>
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T13:59:59.277382" level="INFO">Clicks the element '[data-ol-link-track="SearchSort|Rating"]'.</msg>
+<arg>${top_rated_filter_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T13:59:59.277017" elapsed="1.207054"/>
+</kw>
+<status status="PASS" start="2024-11-18T13:59:59.247757" elapsed="1.236560"/>
+</kw>
+<kw name="Check If the Sorting Works Right" owner="AuthorDetailPage">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-18T14:00:00.533256" level="INFO">Text: 'Harry Potter and the Prisoner of Azkaban'</msg>
+<msg time="2024-11-18T14:00:00.533416" level="INFO">${book_title} = Harry Potter and the Prisoner of Azkaban</msg>
+<var>${book_title}</var>
+<arg>${top_rated_book_locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:00.485273" elapsed="0.048181"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${book_title}</arg>
+<arg>${expected_top_rated_work_title}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-18T14:00:00.533590" elapsed="0.000194"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:00.484610" elapsed="0.049232"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-11-18T14:00:00.620998" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-18T14:00:00.533962" elapsed="0.087195"/>
+</kw>
+<status status="PASS" start="2024-11-18T13:59:52.294476" elapsed="8.326858"/>
+</test>
+<test id="s1-t2" name="Select Romance Category and Filter the Results" line="21">
+<kw name="Open Browser" owner="HomePage">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-11-18T14:00:00.627399" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/alimostafaei/Desktop/Mobina's file/ThreatFabric/log/browser/traces/2ea6f670-2f2d-41c8-8916-6934ebf53b0a"}</msg>
+<msg time="2024-11-18T14:00:00.930333" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/alimostafaei/Desktop/Mobina's file/ThreatFabric/log/browser/traces/2ea6f670-2f2d-41c8-8916-6934ebf53b0a"}</msg>
+<arg>headless=${headless_status}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-11-18T14:00:00.626925" elapsed="0.303603"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-18T14:00:08.295362" level="INFO">Successfully initialized new page object and opened url: https://openlibrary.org/</msg>
+<msg time="2024-11-18T14:00:08.295516" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-18T14:00:00.930674" elapsed="7.364985"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2024-11-18T14:00:08.341301" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1512</arg>
+<arg>823</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2024-11-18T14:00:08.295851" elapsed="0.045599"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:00.626690" elapsed="7.714847"/>
+</kw>
+<kw name="Scroll to Reach to Romance Category" owner="HomePage">
+<kw name="Scroll To Element" owner="Browser">
+<arg>${homepage_book_category}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>This method waits for actionability checks, then tries to scroll element into view,
+unless it is completely visible.</doc>
+<status status="PASS" start="2024-11-18T14:00:08.341856" elapsed="0.035687"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:08.341674" elapsed="0.035982"/>
+</kw>
+<kw name="Tap on the Romance Category" owner="HomePage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T14:00:08.378175" level="INFO">Clicks the element 'text=Romance &gt;&gt; nth=0'.</msg>
+<arg>${homepage_book_category}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:08.377954" elapsed="0.973416"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:08.377783" elapsed="0.973740"/>
+</kw>
+<kw name="Tap on Page Filter Options" owner="BookCategoryDetailPage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T14:00:09.352409" level="INFO">Clicks the element 'span[class="collapser-icon"]'.</msg>
+<arg>${page_filter_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:09.352024" elapsed="3.072283"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:09.351706" elapsed="3.072715"/>
+</kw>
+<kw name="Filter results by year 2014" owner="BookCategoryDetailPage">
+<kw name="Check Checkbox" owner="Browser">
+<arg>${filter_by_year_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:12.424731" elapsed="1.663431"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:12.424553" elapsed="1.663721"/>
+</kw>
+<kw name="Check if the number of results is as expected" owner="BookCategoryDetailPage">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-18T14:00:14.100790" level="INFO">Text: '398'</msg>
+<msg time="2024-11-18T14:00:14.100940" level="INFO">${book_number} = 398</msg>
+<var>${book_number}</var>
+<arg>${result_number_locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:14.088593" elapsed="0.012378"/>
+</kw>
+<kw name="Then Should Be Equal As Strings" owner="BuiltIn">
+<arg>${book_number}</arg>
+<arg>${expected_result_number}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-18T14:00:14.101112" elapsed="0.000161"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:14.088405" elapsed="0.012914"/>
+</kw>
+<kw name="Sort the Result Page by Title Option" owner="BookCategoryDetailPage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T14:00:14.101741" level="INFO">Clicks the element '[data-title=Title]'.</msg>
+<arg>${sort_by_relevance_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:14.101531" elapsed="0.069725"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:14.101408" elapsed="0.070060"/>
+</kw>
+<kw name="Check if the book title is as expected" owner="BookCategoryDetailPage">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-18T14:00:15.996696" level="INFO">Text: '100 prompts for romance writers'</msg>
+<msg time="2024-11-18T14:00:15.997074" level="INFO">${book_title} = 100 prompts for romance writers</msg>
+<var>${book_title}</var>
+<arg>${resulted_book_title_locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:14.171845" elapsed="1.825296"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${expected_book_title}</arg>
+<arg>${book_title}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-18T14:00:15.997467" elapsed="0.000352"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:14.171645" elapsed="1.826272"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-11-18T14:00:16.100055" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-18T14:00:15.998128" elapsed="0.102071"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:00.625313" elapsed="15.474952"/>
+</test>
+<test id="s1-t3" name="Search game of thrones Book by title and select ebooks" line="31">
+<kw name="Open Browser" owner="HomePage">
+<kw name="New Browser" owner="Browser">
+<msg time="2024-11-18T14:00:16.103920" level="INFO">{"browser": "chromium", "headless": false, "chromiumSandbox": false, "devtools": false, "handleSIGHUP": true, "handleSIGINT": true, "handleSIGTERM": true, "slowMo": 0.0, "timeout": 30000.0, "tracesDir": "/Users/alimostafaei/Desktop/Mobina's file/ThreatFabric/log/browser/traces/3cecb89a-0d63-4d5b-a891-97f38bcd30b1"}</msg>
+<msg time="2024-11-18T14:00:16.395572" level="INFO">Successfully created browser with options: {"browser":"chromium","headless":false,"chromiumSandbox":false,"devtools":false,"handleSIGHUP":true,"handleSIGINT":true,"handleSIGTERM":true,"slowMo":0,"timeout":30000,"tracesDir":"/Users/alimostafaei/Desktop/Mobina's file/ThreatFabric/log/browser/traces/3cecb89a-0d63-4d5b-a891-97f38bcd30b1"}</msg>
+<arg>headless=${headless_status}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Create a new playwright Browser with specified options.</doc>
+<status status="PASS" start="2024-11-18T14:00:16.103553" elapsed="0.292265"/>
+</kw>
+<kw name="New Page" owner="Browser">
+<msg time="2024-11-18T14:00:18.569203" level="INFO">Successfully initialized new page object and opened url: https://openlibrary.org/</msg>
+<msg time="2024-11-18T14:00:18.569395" level="INFO">No context was open. New context was automatically opened when this page is created.</msg>
+<arg>${url}</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Open a new Page.</doc>
+<status status="PASS" start="2024-11-18T14:00:16.403059" elapsed="2.166491"/>
+</kw>
+<kw name="Set Viewport Size" owner="Browser">
+<msg time="2024-11-18T14:00:18.611411" level="INFO">Set viewport size to: [object Object]</msg>
+<arg>1512</arg>
+<arg>823</arg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Sets current Pages viewport size to specified dimensions.</doc>
+<status status="PASS" start="2024-11-18T14:00:18.569701" elapsed="0.041863"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:16.103355" elapsed="2.508294"/>
+</kw>
+<kw name="Tap on Search Options and select title" owner="HomePage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T14:00:18.612194" level="INFO">Clicks the element '[class=search-facet]'.</msg>
+<arg>${search_options_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:18.611966" elapsed="0.065420"/>
+</kw>
+<kw name="Select Options By" owner="Browser">
+<msg time="2024-11-18T14:00:18.677906" level="INFO">Selects the option(s) title by attribute SelectAttribute.value from element [aria-label="Search by"].</msg>
+<arg>${search_options_list_locator}</arg>
+<arg>value</arg>
+<arg>${search_option}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Selects options from select element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:18.677559" elapsed="0.043309"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:18.611786" elapsed="0.109203"/>
+</kw>
+<kw name="Fill in the Search Box with book title" owner="HomePage">
+<kw name="Fill Text" owner="Browser">
+<msg time="2024-11-18T14:00:18.721583" level="INFO">Fills the text 'game of thrones' in the given field.</msg>
+<arg>${search_box_locator}</arg>
+<arg>${search_item}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Clears and fills the given ``txt`` into the text field found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:18.721323" elapsed="0.013748"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:18.721128" elapsed="0.014063"/>
+</kw>
+<kw name="Tap on Submit Search button" owner="HomePage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T14:00:18.736395" level="INFO">Clicks the element '[class="search-bar-submit"]'.</msg>
+<arg>${search_button_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:18.735755" elapsed="2.132347"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:18.735356" elapsed="2.132895"/>
+</kw>
+<kw name="Select ebooks Checkbox" owner="SearchResultPage">
+<kw name="Check Checkbox" owner="Browser">
+<arg>${desired_check_box_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Checks the checkbox or selects radio button found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:20.868828" elapsed="0.816586"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:20.868440" elapsed="0.817124"/>
+</kw>
+<kw name="Click on the third Book Title" owner="SearchResultPage">
+<kw name="Click" owner="Browser">
+<msg time="2024-11-18T14:00:21.686440" level="INFO">Clicks the element 'a[itemprop="url"] &gt;&gt; nth=2'.</msg>
+<arg>${search_page_book_title_locator}</arg>
+<tag>PageContent</tag>
+<tag>Setter</tag>
+<doc>Simulates mouse click on the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:21.686074" elapsed="2.410899"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:21.685726" elapsed="2.411385"/>
+</kw>
+<kw name="Check if the book title is as expected" owner="BookDetailPage">
+<kw name="Get Text" owner="Browser">
+<msg time="2024-11-18T14:00:24.320659" level="INFO">Text: 'Game of Thrones A-Z'</msg>
+<msg time="2024-11-18T14:00:24.320801" level="INFO">${book_title} = Game of Thrones A-Z</msg>
+<var>${book_title}</var>
+<arg>${book_detail_page_title_locator}</arg>
+<tag>Assertion</tag>
+<tag>Getter</tag>
+<tag>PageContent</tag>
+<doc>Returns text attribute of the element found by ``selector``.</doc>
+<status status="PASS" start="2024-11-18T14:00:24.097498" elapsed="0.223333"/>
+</kw>
+<kw name="Should Be Equal As Strings" owner="BuiltIn">
+<arg>${book_detail_page_expected_title}</arg>
+<arg>${book_title}</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" start="2024-11-18T14:00:24.320956" elapsed="0.000152"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:24.097269" elapsed="0.223887"/>
+</kw>
+<kw name="Close Browser" owner="Browser" type="TEARDOWN">
+<msg time="2024-11-18T14:00:24.414756" level="INFO">Closed browser</msg>
+<tag>BrowserControl</tag>
+<tag>Setter</tag>
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2024-11-18T14:00:24.321251" elapsed="0.093647"/>
+</kw>
+<status status="PASS" start="2024-11-18T14:00:16.102311" elapsed="8.312652"/>
+</test>
+<status status="PASS" start="2024-11-18T13:59:52.211385" elapsed="32.205825"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="UITestCases">UITestCases</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

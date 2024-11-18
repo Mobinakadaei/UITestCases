@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.1.1 (Python 3.11.9 on darwin)" generated="2024-11-14T15:25:45.533383" rpa="false" schemaversion="5">
+<suite id="s1" name="ApiTests" source="/Users/alimostafaei/Desktop/ThreatFabric/ApiTests.robot">
+<test id="s1-t1" name="Search for Harry Potter" line="21">
+<kw name="Search for Book By Title and Author">
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-11-14T15:25:45.584021" level="INFO">${url} = https://openlibrary.org/search.json?title=harry+potter&amp;author=rowling</msg>
+<var>${url}</var>
+<arg>${BASE_URL}/search.json?title=${title}&amp;author=${author}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-11-14T15:25:45.583897" elapsed="0.000140"/>
+</kw>
+<kw name="Create Session" owner="RequestsLibrary">
+<msg time="2024-11-14T15:25:45.584205" level="INFO">Creating Session using : alias=Create Session, url=open_library_session, headers=https://openlibrary.org,                     cookies={}, auth=None, timeout=None, proxies=None, verify=False,                     debug=0 </msg>
+<msg time="2024-11-14T15:25:45.584297" level="FAIL">ValueError: not enough values to unpack (expected 2, got 1)</msg>
+<arg>Create Session</arg>
+<arg>open_library_session</arg>
+<arg>${BASE_URL}</arg>
+<doc>Create Session: create a HTTP session to a server</doc>
+<status status="FAIL" start="2024-11-14T15:25:45.584095" elapsed="0.000473">ValueError: not enough values to unpack (expected 2, got 1)</status>
+</kw>
+<kw name="Get Request" owner="RequestsLibrary">
+<msg time="2024-11-14T15:25:45.584639" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+<var>${response}</var>
+<arg>${url}</arg>
+<doc>*DEPRECATED* Please use `GET On Session` instead.</doc>
+<status status="NOT RUN" start="2024-11-14T15:25:45.584629" elapsed="0.000061"/>
+</kw>
+<kw name="Should Be Equal As Numbers" owner="BuiltIn">
+<arg>${response.status_code}</arg>
+<arg>200</arg>
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<status status="NOT RUN" start="2024-11-14T15:25:45.584735" elapsed="0.000008"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<arg>${response.json()}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-11-14T15:25:45.584782" elapsed="0.000007"/>
+</kw>
+<arg>${title}</arg>
+<arg>${author}</arg>
+<status status="FAIL" start="2024-11-14T15:25:45.583557" elapsed="0.001283">ValueError: not enough values to unpack (expected 2, got 1)</status>
+</kw>
+<status status="FAIL" start="2024-11-14T15:25:45.583275" elapsed="0.001639">ValueError: not enough values to unpack (expected 2, got 1)</status>
+</test>
+<status status="FAIL" start="2024-11-14T15:25:45.534068" elapsed="0.050998"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="ApiTests">ApiTests</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-11-14T15:25:45.584639" level="WARN">Keyword 'RequestsLibrary.Get Request' is deprecated. Please use `GET On Session` instead.</msg>
+</errors>
+</robot>
