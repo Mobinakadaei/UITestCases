@@ -63,7 +63,7 @@ By organizing the code in this manner, all web elements, interactions, and varia
 
 ## 2. Modularized Variables
 
-  To promote cleaner code and better separation of concerns, I have centralized all variables in the Keyword files rather than including them in the test case files. This approach results in cleaner, more modular test cases. If a change to a variable is needed, it only has to be made in one place, within the relevant page object file. With this structure, testing different scenarios with varying inputs becomes much easier. Additionally, if any web elements change, adapting to those changes is straightforward, as updates are confined to the page object, ensuring minimal impact on the test cases.
+  To promote cleaner code and better separation of concerns, I have centralized all variables in the Keyword files rather than including them in the test case files. This approach results in cleaner, more modular test cases. If a change to a variable is needed, it only has to be made in one place, within the relevant page object file. With this structure, testing different scenarios with varying inputs becomes much easier. Additionally, if any web elements change, adapting to those changes is straightforward, as updates are confined to the page object, ensuring minimal impact on the test cases. I have utilized variables to name my test cases, allowing for dynamic naming. By simply changing the value of a variable, the corresponding test case name will automatically update accordingly.
 
   * Reusability: Variables can be accessed across different classes and test files without duplication.
 
@@ -113,5 +113,17 @@ By organizing the code in this manner, all web elements, interactions, and varia
 
    * Ease of Use and Readability
    Python’s simple, clean, and highly readable syntax makes it easier for teams to write, understand, and maintain test scripts. 
+
+## My Project Test Cases:
+
+I have added two additional test cases to this project, and I have outlined the steps below for a clearer understanding.
+
+Select Romance Category and Filter the Results
+| Step        | Expected Result |
+|-------------|-----------------|
+|Open Browser and Scroll Home page to reach to Romance category and tap on that. | Romance category detail page will open.|
+|Tap on filter button and choose 2014 year form that.| Only the books related to 2014 year must be appeared with a specified number.| 
+|Sort the page result by title. | Books must be sorted by their title in order.|
+
 
 
