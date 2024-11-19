@@ -31,12 +31,13 @@ Follow these steps to set up the project on your machine:
    robot UITestCases.robot
    ```
 
-
-The UI test cases are located in the TestCases/UITestCases.robot folder and will be executed after the installation steps mentioned earlier. The keywords for each web page are organized into separate folders within the pageObjectModel directory. This structure ensures that the main keywords and variables, which are used across the test cases, are defined and detailed within the corresponding files in that directory. This modular approach enhances the maintainability and reusability of the test scripts.
-
 ## Test Approach
 
-In this project, I used the Page Object Model (POM) to structure and organize the UI tests. The POM is a design pattern that helps maintainable, reusable, and scalable test code by separating test cases from the UI actions and elements. Here's an overview of how I implemented this approach:
+The UI test cases for this project are located in the TestCases/UITestCases.robot folder and will be executed following the installation steps provided earlier. I used the Page Object Model (POM) design pattern alongside Playwright for interacting with web elements in Robot Framework. This approach structures and organizes UI tests by separating the logic for interacting with web elements from the test cases themselves, making the code more maintainable, reusable, and scalable.
+
+Keywords for interacting with each web page's elements are organized within separate files in the pageObjectModel directory. This modular structure ensures that main keywords and variables are defined and detailed within dedicated files, while the test case files focus solely on test case definitions, without embedding logic or variables. Additionally, if any variables need to be changed, they can be modified in a single, dedicated file for each page object, simplifying updates and maintenance. This separation leads to cleaner, easier-to-read, and more manageable test scripts.
+
+Here's an overview of how I implemented this approach:
 
 ## 1. Page Object Model (POM) Structure
 
