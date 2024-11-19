@@ -123,7 +123,7 @@ I have added two additional test cases to this project, and I have outlined the 
 | Steps        | Expected Result |
 |-------------|-----------------|
 |Open Browser and Scroll Home page to reach to Romance category and tap on that.| Romance category detail page will open.|
-|Tap on filter button and choose 2014 year form that.| Only the books related to 2014 year must be appeared with a specified number (I commented out this part of my code because the number of results has changed.)| 
+|Tap on filter button and choose 2014 year form that.| Only the books related to 2014 year must be appeared with a specified number (I commented out this part of my code because the number of results has changed alternatively.)| 
 |Sort the page result by title.| Books must be sorted by their title in order.|
 
 
