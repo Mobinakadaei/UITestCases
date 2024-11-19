@@ -45,22 +45,22 @@ Here's an overview of how I implemented this approach:
 Here is a brief description of the page structures:
 
    * Home Page:
-   This Robot file contains Keywords and variables for interacting with the homepage, such as submitting search button, fill in the search box, scrolling home page, and tapping on specific category.
+   This Robot file contains keywords and variables for interacting with the homepage, including actions such as submitting the search form, filling in the search box, scrolling the page, and selecting a specific category.
 
    * AdvancedSearch Page:
-   This Robot file contains Keywords and variables for interacting with the Advanced Search page, after tapping on search button in the home page and selecting advanced search from the menu bar. The keywords contains entering book title or author name and clicking on submit button and ... .
+   This Robot file contains keywords and variables for interacting with the Advanced Search page. It is triggered after clicking the search button on the homepage and selecting "Advanced Search" from the menu bar. The keywords include actions such as entering a book title or author name, clicking the submit button, and other related interactions.
 
    * AuthorDetail Page:
-   This Robot file contains Keywords and variables for interacting with the Author Detail Page, such as sort author's works and check if the result is as expected.
+   This Robot file contains keywords and variables for interacting with the Author Detail Page, including actions such as sorting the author's works and verifying if the results meet the expected criteria.
 
    * BookCategoryDetail Page:
-   This Robot file contains Keywords and variables for interacting with the Book Category Detail Page, such as sort author's works and check if the result is as expected.
+   This Robot file contains keywords and variables for interacting with the Book Category Detail Page, including actions such as filtering results by year, sorting books by title, and verifying that the results match the expected outcome.
 
    * BookDetail Page:
-   This Robot file contains Keywords and variables for interacting with the Book Detail Page, check if the book title is as expected or not.
+   This Robot file contains keywords and variables for interacting with the Book Detail Page, including an action to verify if the book title matches the expected value.
 
    * SearchResult Page:
-   This Robot file contains Keywords and variables for interacting with the search result Page, check the checkbox or clicking on the book title.
+   This Robot file contains keywords and variables for interacting with the search results page, including actions such as selecting a checkbox or clicking on a book title.
 
 
 By organizing the code in this manner, all web elements, interactions, and variables for each page are centralized in a single file, making maintenance simpler and reducing code duplication. This clear separation of concerns ensures that test logic (test cases) and page interaction logic (UI elements and actions) remain distinct. When UI changes occur, only the relevant page object needs to be updated, leaving the test cases unaffected. This approach allows for easier adaptation to UI changes without impacting the tests. Furthermore, it enhances the readability of the test scripts, as they focus solely on the behavior being tested, rather than the implementation details of UI interaction. Keeping all page-specific variables within the same file also improves modularity, making it easier to reuse the file with different variables for other test cases.
