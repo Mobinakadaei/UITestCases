@@ -40,9 +40,8 @@ Keywords for interacting with each web page's elements are organized within sepa
 Here's an overview of how I implemented this approach:
 
 ## 1. Page Object Model (POM) Structure
-
-   Each web page in the application under test is represented by a set of keywords in a dedicated Robot Framework test file. This file encapsulates all the actions, variables, and web elements relevant to that particular page, making the code more modular and easier to maintain. 
-Here is a brief description of the page structures:
+   
+   Each web page in the application under test is represented by a set of keywords in a dedicated Robot Framework test file, encapsulating all relevant actions, variables, and web elements for that page. This approach enhances modularity and maintainability by centralizing code for each page in a single file, reducing duplication and simplifying updates. By separating test logic (test cases) from page interaction logic (UI elements and actions), this method ensures that UI changes only require updates to the relevant page object, leaving the test cases unaffected. It also improves test script readability, as the focus remains on the behavior being tested, and supports easier adaptation to UI changes. Additionally, keeping page-specific variables within the same file boosts reusability, making it simple to use the file with different variables for other test cases. Here is a brief description of the page structures:
 
    * **Home Page:**
    This Robot file contains keywords and variables for interacting with the homepage, including actions such as submitting the search form, filling in the search box, scrolling the page, and selecting a specific category.
@@ -62,8 +61,6 @@ Here is a brief description of the page structures:
    * **SearchResult Page:**
    This Robot file contains keywords and variables for interacting with the search results page, including actions such as selecting a checkbox or clicking on a book title.
 
-
-By organizing the code in this manner, all web elements, interactions, and variables for each page are centralized in a single file, making maintenance simpler and reducing code duplication. This clear separation of concerns ensures that test logic (test cases) and page interaction logic (UI elements and actions) remain distinct. When UI changes occur, only the relevant page object needs to be updated, leaving the test cases unaffected. This approach allows for easier adaptation to UI changes without impacting the tests. Furthermore, it enhances the readability of the test scripts, as they focus solely on the behavior being tested, rather than the implementation details of UI interaction. Keeping all page-specific variables within the same file also improves modularity, making it easier to reuse the file with different variables for other test cases.
 
 ## 2. Modularized Variables
 
