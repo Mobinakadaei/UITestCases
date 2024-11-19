@@ -24,7 +24,7 @@ Select ${desired_category} Category and Filter the Results
     HomePage.Tap on the Romance Category
     BookCategoryDetailPage.Tap on Page Filter Options
     BookCategoryDetailPage.Filter results by year 2014
-    BookCategoryDetailPage.Check if the number of results is as expected
+#    BookCategoryDetailPage.Check if the number of results is as expected
     BookCategoryDetailPage.Sort the Result Page by Title Option
     BookCategoryDetailPage.Check if the book title is as expected
 

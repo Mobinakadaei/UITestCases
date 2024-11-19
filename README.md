@@ -35,7 +35,7 @@ Follow these steps to set up the project on your machine:
 
 The UI test cases for this project are located in the TestCases/UITestCases.robot folder and will be executed following the installation steps provided earlier. I used the Page Object Model (POM) design pattern alongside Playwright for interacting with web elements in Robot Framework. This approach structures and organizes UI tests by separating the logic for interacting with web elements from the test cases themselves, making the code more maintainable, reusable, and scalable.
 
-Keywords for interacting with each web page's elements are organized within separate files in the pageObjectModel directory. This modular structure ensures that main keywords and variables are defined and detailed within dedicated files, while the test case files focus solely on test case definitions, without embedding logic or variables. Additionally, if any variables need to be changed, they can be modified in a single, dedicated file for each page object, simplifying updates and maintenance. This separation leads to cleaner, easier-to-read, and more manageable test scripts.
+Keywords for interacting with each web page's elements are organized within separate files in the pageObjectModel directory. This modular structure ensures that main keywords and variables are defined and detailed within dedicated files, while the test case files focus solely on test case definitions, without embedding logic or variables. Additionally, if any variables need to be changed, they can be modified in a single, dedicated file for each page object, simplifying updates and maintenance. This separation leads to cleaner, easier-to-read, and more manageable test scripts. (I would like to mention that at the time of testing, the top-rated book by J.K. Rowling on the website was "Harry Potter and the Prisoner of Azkaban," so I asserted that book instead of "Harry Potter and the Half-Blood Prince.")
 
 Here's an overview of how I implemented this approach:
 
@@ -64,7 +64,7 @@ Here's an overview of how I implemented this approach:
 
 ## 2. Modularized Variables
 
-  To promote cleaner code and better separation of concerns, I have centralized all variables in the Keyword files rather than including them in the test case files. This approach results in cleaner, more modular test cases. If a change to a variable is needed, it only has to be made in one place, within the relevant page object file. With this structure, testing different scenarios with varying inputs becomes much easier. Additionally, if any web elements change, adapting to those changes is straightforward, as updates are confined to the page object, ensuring minimal impact on the test cases. I have utilized variables to name my test cases, allowing for dynamic naming. By simply changing the value of a variable, the corresponding test case name will automatically update accordingly.
+  I have centralized all variables in the keyword files instead of including them in the test case files, promoting cleaner code and better separation of concerns. This structure makes it easier to test different scenarios with varying inputs and simplifies updates when web elements change, as modifications are confined to the relevant page object. Additionally, by using variables to dynamically name my test cases, I can easily update test case names by simply changing the value of a variable, ensuring consistency and simplifying maintenance.
 
   * Reusability: Variables can be accessed across different classes and test files without duplication.
 
@@ -123,14 +123,14 @@ I have added two additional test cases to this project, and I have outlined the 
 | Steps        | Expected Result |
 |-------------|-----------------|
 |Open Browser and Scroll Home page to reach to Romance category and tap on that.| Romance category detail page will open.|
-|Tap on filter button and choose 2014 year form that.| Only the books related to 2014 year must be appeared with a specified number.| 
+|Tap on filter button and choose 2014 year form that.| Only the books related to 2014 year must be appeared with a specified number (I commented out this part of my code because the number of results has changed.)| 
 |Sort the page result by title.| Books must be sorted by their title in order.|
 
 
 **TestCase2: Search a Book by title and select ebooks**
 | Steps        | Expected Result |
 |-------------|-----------------|
-|Open Browser and set the search method to title.| Title method must be choosed.|
+|Open Browser and set the search method to title.| The title method must be selected.|
 |Fill in the search box with a book title and tap on search.| Search results must be displayed correctly.| 
 |Tap on ebooks checkbox.| Only ebooks must be shown.|
 |Click on the third book title.| Book detail page must be opened correctly.|
