@@ -45,7 +45,6 @@ Here's an overview of how I implemented this approach:
 Here is a brief description of the page structures:
 
    * **Home Page:**
-
    This Robot file contains keywords and variables for interacting with the homepage, including actions such as submitting the search form, filling in the search box, scrolling the page, and selecting a specific category.
 
    * AdvancedSearch Page:
