@@ -42,6 +42,7 @@ Here's an overview of how I implemented this approach:
 ## 1. Page Object Model (POM) Structure
 
    Each web page in the application under test is represented by a set of keywords in a dedicated Robot Framework test file. This file encapsulates all the actions, variables, and web elements relevant to that particular page, making the code more modular and easier to maintain. 
+Here is a brief description of the page structures:
 
    * Home Page:
    This Robot file contains Keywords and variables for interacting with the homepage, such as submitting search button, fill in the search box, scrolling home page, and tapping on specific category.
