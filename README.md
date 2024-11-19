@@ -47,19 +47,19 @@ Here is a brief description of the page structures:
    * **Home Page:**
    This Robot file contains keywords and variables for interacting with the homepage, including actions such as submitting the search form, filling in the search box, scrolling the page, and selecting a specific category.
 
-   * AdvancedSearch Page:
+   * **AdvancedSearch Page:**
    This Robot file contains keywords and variables for interacting with the Advanced Search page. It is triggered after clicking the search button on the homepage and selecting "Advanced Search" from the menu bar. The keywords include actions such as entering a book title or author name, clicking the submit button, and other related interactions.
 
-   * AuthorDetail Page:
+   * **AuthorDetail Page:**
    This Robot file contains keywords and variables for interacting with the Author Detail Page, including actions such as sorting the author's works and verifying if the results meet the expected criteria.
 
-   * BookCategoryDetail Page:
+   * **BookCategoryDetail Page:**
    This Robot file contains keywords and variables for interacting with the Book Category Detail Page, including actions such as filtering results by year, sorting books by title, and verifying that the results match the expected outcome.
 
-   * BookDetail Page:
+   * **BookDetail Page:**
    This Robot file contains keywords and variables for interacting with the Book Detail Page, including an action to verify if the book title matches the expected value.
 
-   * SearchResult Page:
+   * **SearchResult Page:**
    This Robot file contains keywords and variables for interacting with the search results page, including actions such as selecting a checkbox or clicking on a book title.
 
 
