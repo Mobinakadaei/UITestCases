@@ -44,7 +44,8 @@ Here's an overview of how I implemented this approach:
    Each web page in the application under test is represented by a set of keywords in a dedicated Robot Framework test file. This file encapsulates all the actions, variables, and web elements relevant to that particular page, making the code more modular and easier to maintain. 
 Here is a brief description of the page structures:
 
-   **Home Page:**
+   * **Home Page:**
+
    This Robot file contains keywords and variables for interacting with the homepage, including actions such as submitting the search form, filling in the search box, scrolling the page, and selecting a specific category.
 
    * AdvancedSearch Page:
